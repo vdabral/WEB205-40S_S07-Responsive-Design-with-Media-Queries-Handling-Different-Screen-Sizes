@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Background Color</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      min-height: 100vh;
+      transition: background-color 0.3s ease;
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        background-color: yellow;
+      }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      .container {
+        background-color: blue;
+      }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .container {
+        background-color: green;
+      }
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1200px) {
+      .container {
+        background-color: orange;
+      }
+    }
+
+    @media screen and (min-width: 1201px) {
+      .container {
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container"></div>
+</body>
+</html>

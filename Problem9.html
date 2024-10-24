@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Offers</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.offers-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offers-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.offer-details {
+  margin-top: 15px;
+}
+
+.offer-details h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.offer-details p {
+  font-size: 16px;
+  color: #777;
+}
+
+.promo-code {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #333;
+  border: 1px dashed #ccc;
+}
+
+@media (max-width: 768px) {
+  .offers-section h1 {
+    font-size: 28px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <section class="offers-section">
+    <h1>OFFERS</h1>
+    <div class="container">
+      <div class="card">
+        <img src="https://images.sugarcosmetics.com/Promotion/795425bf-04ec-424c-b2d6-21e956dadb9c.jpg" alt="Offer 1">
+        <div class="offer-details">
+          <h3>₹300 OFF</h3>
+          <p>On orders of ₹999</p>
+        </div>
+        <div class="promo-code">DEAL300</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.sugarcosmetics.com/Promotion/795425bf-04ec-424c-b2d6-21e956dadb9c.jpg" alt="Offer 2">
+        <div class="offer-details">
+          <h3>FREE POUCH</h3>
+          <p>On orders above ₹599</p>
+        </div>
+        <div class="promo-code">DEAL599</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.sugarcosmetics.com/Promotion/795425bf-04ec-424c-b2d6-21e956dadb9c.jpg" alt="Offer 3">
+        <div class="offer-details">
+          <h3>Get Our Bestselling Face Primer FREE</h3>
+          <p>On orders above ₹899</p>
+        </div>
+        <div class="promo-code">FACEPRMR</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.sugarcosmetics.com/Promotion/795425bf-04ec-424c-b2d6-21e956dadb9c.jpg" alt="Offer 4">
+        <div class="offer-details">
+          <h3>Classy Sling Bag</h3>
+          <p>On orders above ₹999</p>
+        </div>
+        <div class="promo-code">SLINGBLING999</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.sugarcosmetics.com/Promotion/795425bf-04ec-424c-b2d6-21e956dadb9c.jpg" alt="Offer 5">
+        <div class="offer-details">
+          <h3>FREE Setting Powder</h3>
+          <p>On orders above ₹799</p>
+        </div>
+        <div class="promo-code">SETPOWDER</div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.sugarcosmetics.com/Promotion/795425bf-04ec-424c-b2d6-21e956dadb9c.jpg" alt="Offer 6">
+        <div class="offer-details">
+          <h3>Get a FREE Eyeshadow Palette</h3>
+          <p>On orders above ₹1299</p>
+        </div>
+        <div class="promo-code">EYESHADOW1299</div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
